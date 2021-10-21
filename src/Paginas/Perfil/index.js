@@ -1,13 +1,15 @@
 import React from "react";
-import { View, Text, TextInput, Button } from 'react-native';
-import styles from "./styles";
+import { Container, Box, Nome} from "./styles";
+import ImagemPerfil from "../../assets/user.png";
 
-import { Container } from "./styles";
 
 export default function Perfil() {
     return(
     <Container> 
-        
+        <Box>
+            <img src={ImagemPerfil} width='40%'></img>
+            <Nome>Nome Usuário</Nome>
+        </Box>
     </Container>
     )
 }
