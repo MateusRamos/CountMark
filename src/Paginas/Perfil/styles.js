@@ -27,24 +27,3 @@ export const BoxImg = styled.View`
     align-items: center;
     margin-top: 50px;
 `;
-
-export const Box2 = styled.View`
-    Display: flex;
-    background: #00c0f2;
-    flexDirection: rox;
-    height: 150px:
-`;
-
-export const Notas = styled.View`
-
-`;
-
-export const Distancia = styled.Text`
-
-`;
-
-export const Seguidores = styled.Text`
-
-`;
-
-
