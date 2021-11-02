@@ -1,8 +1,10 @@
 import React from 'react';
-import Perfil from './src/Paginas/Perfil';
+import Lista_Empresa from './src/Paginas/Lista_Empresa';
 
 export default function App() {
   return (
-      <Perfil/>
+      <Lista_Empresa/>
   );
 }
+
+
