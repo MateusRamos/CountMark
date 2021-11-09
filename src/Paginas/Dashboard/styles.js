@@ -36,7 +36,7 @@ export const BotaoLogin = styled.TouchableOpacity`
 `;
 //-----------Busca-----------//
 export const Busca = styled.View`
-    background-color: pink;
+    background-color: #f7f7f7;
     height: 35%;
     justify-content: center;
     align-items: center;
@@ -46,6 +46,7 @@ export const TextoSlogan = styled.Text`
     font-weight: bolder;
     font-size: 120%;
     margin-bottom: 3%;
+    padding-top: 5%;
 `;
 
 export const TextoSubSlogan = styled.Text`
@@ -53,17 +54,45 @@ export const TextoSubSlogan = styled.Text`
     color: #858584;
 `;
 
-export const EntradaEndereco = styled.TextInput`
+export const EntradaEndereco = styled.View`
+    flex-direction: row;
+    width: 80%;
+    height: 17%;
+    background-color: white;
+    margin-top: 6%;
+    padding-left: 2%;
+    border-color: #858584;
+    border-width: 1px;
+    border-style: solid;
+    align-items: center;
+`;
 
+export const TextoBusca = styled.TextInput`
+    width: 100%;
+    height: 100%;
+    padding-left: 6%;
 `;
 
 export const BotaoBuscar = styled.TouchableOpacity`
-
+    width: 80%;
+    height: 17%;
+    background-color: #18BFF0;
+    margin-top: 3%;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bolder;
+    justify-content: center;
+    font-size: 20;
+    color: white;
 `;
 //-----------Destaques-----------//
 export const Destaques = styled.View`
-    background-color: blue;
+    background-color: #f7f7f7;
+    width: 100%;
     height: 30%;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5%;
 `;
 //-----------Categorias-----------//
 export const Categorias = styled.View`
