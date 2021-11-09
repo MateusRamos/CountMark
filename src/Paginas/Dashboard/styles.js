@@ -6,7 +6,7 @@ export const Container = styled.SafeAreaView`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #f7f7f7;
 `;
 //-----------Cabecalho-----------//
 export const Cabecalho = styled.View`
@@ -37,7 +37,7 @@ export const BotaoLogin = styled.TouchableOpacity`
 //-----------Busca-----------//
 export const Busca = styled.View`
     background-color: #f7f7f7;
-    height: 35%;
+    height: 30%;
     justify-content: center;
     align-items: center;
 `;
@@ -96,11 +96,82 @@ export const Destaques = styled.View`
 `;
 //-----------Categorias-----------//
 export const Categorias = styled.View`
-    background-color: green;
-    height: 13%;
+    background-color: #f7f7f7;
+    height: 15%;
+`;
+
+export const ListaCategorias = styled.FlatList`
+    width: 100%;
+    height: 100%;
+`;
+
+export const BoxCorretiva = styled.View`
+    width: 20;
+`;
+
+export const BoxCategoria = styled.TouchableOpacity`
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+`;
+
+export const TextoNomeCategoria = styled.Text`
+    text-transform: uppercase;
+    color: black;
+    font-size: 10;
+    font-weight: bold;
+`;
+//-----------Delimitador-----------//
+export const Delimitador = styled.View`
+    background-color: #F7F7F7;
+    height: 3%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+`;
+
+export const LinhaDelimitador = styled.View`
+    height: 7%;
+    width: 85%;
+    background-color: #c2c2c2;   
 `;
 //-----------MaisProcurados-----------//
 export const MaisProcurados = styled.View`
-    background-color: pink;
     height: 50%;
+`;
+
+export const ListaProcurados = styled.FlatList`
+    height: 100%;
+    width: 100%
+`;
+
+export const BoxItemEmpresa = styled.TouchableOpacity`
+    width: 40%;
+    height: 87%;
+    background-color: white;
+    margin-left: 6%;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-style: solid;
+    border-color: #c2c2c2;
+    border-width: 1px;
+    border-radius: 10px
+`;
+
+export const BoxDadosEmpresa = styled.View`
+    width: 50%;
+    aling-items:center;
+`;
+
+export const TextoNomeEmpresa = styled.Text`
+    font-size: 8;
+    font-weight: bold;
+    text-transform: uppercase;
+`;
+
+export const TextoCategoriaEmpresa = styled.Text`
+    font-size: 7;
 `;
