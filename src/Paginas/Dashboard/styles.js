@@ -23,7 +23,7 @@ export const ImgLogo = styled.View`
 `;
 
 export const BotaoLogin = styled.TouchableOpacity`
-    height: 60%;
+    height: 50%;
     width: 22%;
     border-radius: 12px;
     background-color: #18bff0;

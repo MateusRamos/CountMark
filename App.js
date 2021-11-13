@@ -1,9 +1,9 @@
 import React from 'react';
-import Dashboard from './src/Paginas/Dashboard';
+import Empresas from './src/Paginas/Empresas';
 
 export default function App() {
   return (
-      <Dashboard/>
+      <Empresas/>
   );
 }
 

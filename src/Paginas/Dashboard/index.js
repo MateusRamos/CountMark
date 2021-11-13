@@ -8,15 +8,14 @@ import Icon from 'react-native-vector-icons/Entypo';
 
 import Logo from "../../assets/logo.png";
 import Promocao1 from "../../assets/Promocao1.png";
-import Promocao2 from "../../assets/Promocao2.gif"
+import Promocao from "../../assets/Promocao.gif"
 
 
 const Category = [
-    {id: '1', Categoria: 'Cervejarias', src:require('../../assets/FotoEmpresa1.png')},
-    {id: '2', Categoria: 'Farmácias', src:require('../../assets/FotoEmpresa2.png')},
-    {id: '3', Categoria: 'Postos', src:require('../../assets/FotoEmpresa3.png')},
-    {id: '4', Categoria: 'Restaurantes', src:require('../../assets/FotoEmpresa4.png')},
-    {id: '5', Categoria: 'Super Mercados', src:require('../../assets/FotoEmpresa5.png')}
+    {id: '1', src:require('../../assets/Cervejarias.png')},
+    {id: '2', src:require('../../assets/Farmacias.png')},
+    {id: '3', src:require('../../assets/Postos.png')},
+    {id: '4', src:require('../../assets/Lojas.png')}
 ]
 
 const TopEmpresas = [
@@ -53,7 +52,7 @@ export default function Dashboard() {
             </Busca>
 
             <Destaques>
-                <img src={Promocao2} width='88%'/>
+                <img src={Promocao} width='330px' height='254px'/>
             </Destaques>
 
             <Categorias>
@@ -66,8 +65,8 @@ export default function Dashboard() {
                 renderItem={({item}) =>
     
                     <BoxCategoria>
-                      <img src={item.src} width='75px' height='75px'/>
-                      <TextoNomeCategoria>{item.Categoria} </TextoNomeCategoria>
+                      <img src={item.src} width='150px' height='150px'/>
+                      <TextoNomeCategoria></TextoNomeCategoria>
                     </BoxCategoria>
 
                 }
