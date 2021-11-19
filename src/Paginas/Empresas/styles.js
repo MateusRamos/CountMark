@@ -33,7 +33,7 @@ export const LogoEmpresa = styled.View`
 export const BoxTitulo = styled.View`
     flex-direction: column;
     background-color: #f7f7f7;
-    width: 100%;
+    width: 70%;
     padding-top: 5%;
     font-size: 100%;
     font-weight: bold;
@@ -74,7 +74,6 @@ export const BuscaProdutos = styled.View `
     width: 85%;
     height: 55%;
     background-color: #f7f7f7;
-    margin-top: 3%;
     margin-left: 8%;
     justify-content: center;
     border-color: #858584;
@@ -88,6 +87,7 @@ export const TextoBusca = styled.TextInput`
     height: 100%;
     padding-left: 2.5%;
     font-size: 100%;
+    background-color: #f7f7f7;
 `;
 
 export const BoxBusca = styled.View`
@@ -109,12 +109,14 @@ export const LinhaDelimitador = styled.View`
     background-color: #c2c2c2;   
 `;
 
-export const Itens = styled.Text`
+export const Itens = styled.View`
     font-weight: bolder;
     font-size: 100%;
     padding-left: 6.5%;
-    padding-top: 6.5%;
+    padding-top: 2.5%;
     margin-bottom: 8%;
+    font-weight: bold;
+    font-family: Sans-serif;
 `;
 
 //-----------Lista-----------//
@@ -124,11 +126,12 @@ export const BoxProdutos = styled.View`
 
 export const ListaProdutos = styled.FlatList`
     width: 95%;
+    background-color: #F7F7F7;
 `;
 
 export const BoxEmpresaItem = styled.TouchableOpacity`
     flex-direction: row;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     padding-top: 3%;
     border-top-width: 1px;
     border-style: solid;
@@ -150,7 +153,7 @@ export const TextoDescricao = styled.Text`
 `;
 
 export const TextoQuantidade = styled.Text`
-    font-size: 10;
+    font-size: 15;
 `;
 
 export const TextoValor = styled.Text`
@@ -160,4 +163,63 @@ export const TextoValor = styled.Text`
 export const BoxItemFoto = styled.View`
     justify-content: center;
     aling-items: center;
+`;
+
+
+
+
+//----------- Botão Inserção -----------//
+
+export const BoxInsercao = styled.View`
+    flex-direction: row;
+    margin-top: 5%;
+`;
+
+export const Carrinho = styled.TouchableOpacity`
+    height: 130%;
+    width: 55%;
+    border-radius: 8px;
+    background-color: red;
+    justify-content: center;
+    text-align: center;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-family: Sans-serif;
+    margin-right: 1%;
+    font-size: 80%;
+`;
+
+
+
+
+
+export const BoxFinalizacao = styled.View`
+    flex-direction: row;
+
+`;
+
+export const FecharPedido = styled.TouchableOpacity`
+    margin-top: 8%;
+    margin-button: 5%;
+    height: 60%;
+    width: 40%;
+    border-radius: 8px;
+    background-color: silver;
+    justify-content: center;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 2.5%;
+    font-size: 80%;
+`;
+
+export const VoltarPagina = styled.TouchableOpacity`
+    margin-top: 8%;
+    margin-button: 5%;
+    height: 60%;
+    width: 40%;
+    border-radius: 8px;
+    background-color: silver;
+    justify-content: center;
+    text-align: center;
+    font-size: 80%;
 `;

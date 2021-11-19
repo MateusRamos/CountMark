@@ -6,13 +6,16 @@ import { Delimitador, LinhaDelimitador, Itens, TextoTitulo, TextoDescricao, Text
 
 import { BoxProdutos, ListaProdutos, BoxEmpresaItem, BoxItemDados, BoxItemFoto } from "./styles";
 
+import { BoxInsercao, Carrinho, FecharPedido, VoltarPagina, BoxFinalizacao } from "./styles";
+
 import WallpaperLogo from "../../assets/Wallpaper.png";
 import LogoApresent from "../../assets/FotoEmpresa1.png"
 
 
 const Produtos = [
     {id: '1', nome: 'Embalagens p/ Viagem', descricao: 'Logo nas embalagens p/ viagem da loja e filiais.', quantidade: 'Referente a 6000 unidades.', valor: 'R$200,00', src:require('../../assets/Embalagem.png')},
-    {id: '2', nome: 'Cardápios', descricao: 'Logo nas embalagens p/ viagem da loja e filiais.', quantidade: '', valor: 'R$600,00', src:require('../../assets/Embalagem.png')},
+    {id: '2', nome: 'Cardápios', descricao: 'Logo na sessão de publicidade do cardápio.', quantidade: 'Em todos os cardápios da empresa', valor: 'R$1.200,00', src:require('../../assets/Embalagem2.png')},
+    {id: '3', nome: 'Televisões', descricao: 'Logo nas televisões de publicidade.', quantidade: '', valor: 'R$100,00', src:require('../../assets/Embalagem3.png')},
 ]
 
 export default function Empresas(){
@@ -40,6 +43,10 @@ export default function Empresas(){
 
             <Itens>
                 Itens
+                <BoxFinalizacao>
+                <FecharPedido>Voltar</FecharPedido>
+                <VoltarPagina>Carrinho</VoltarPagina>
+                </BoxFinalizacao>
             </Itens>
 
             <BoxProdutos>
@@ -52,10 +59,13 @@ export default function Empresas(){
                     <BoxEmpresaItem>
 
                         <BoxItemDados>
-                            <TextoTitulo>Embalagens para viagem</TextoTitulo>
-                            <TextoDescricao>Logo de sua empresa em todas as embalagens utilizadas para viagem</TextoDescricao>
-                            <TextoQuantidade>6000 unidades</TextoQuantidade>
-                            <TextoValor>R$ 200,00</TextoValor>
+                            <TextoTitulo>{item.nome}</TextoTitulo>
+                            <TextoDescricao>{item.descricao}</TextoDescricao>
+                            <TextoQuantidade>{item.quantidade}</TextoQuantidade>
+                            <TextoValor>{item.valor}</TextoValor>
+                            <BoxInsercao>
+                                <Carrinho>Adicionar o Carrinho</Carrinho>
+                            </BoxInsercao>
                         </BoxItemDados>
 
                         <BoxItemFoto>

@@ -1,9 +1,9 @@
 import React from 'react';
-import Empresas from './src/Paginas/Empresas';
+import Login from './src/Paginas/Login';
 
 export default function App() {
   return (
-      <Empresas/>
+      <Login/>
   );
 }
 
